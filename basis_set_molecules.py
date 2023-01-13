@@ -168,16 +168,16 @@ BASIS_SETS = [
     "6-311g**",
     "6-311+g**",
     "6-311++g**",
-    "aug-cc-pVXZ",
-    "heavy-aug-cc-pVXZ",
-    "jun-cc-pVXZ",
-    "may-cc-pVXZ",
-    "cc-pVXZ",
-    "cc-pV(X+d)Z",
-    "cc-pCVXZ",
-    "cc-pCV(X+d)Z",
-    "cc-pwCVXZ",
-    "cc-pwCV(X+d)Z",
+    # "aug-cc-pVXZ",
+    # "heavy-aug-cc-pVXZ",
+    # "jun-cc-pVXZ",
+    # "may-cc-pVXZ",
+    # "cc-pVXZ",
+    # "cc-pV(X+d)Z",
+    # "cc-pCVXZ",
+    # "cc-pCV(X+d)Z",
+    # "cc-pwCVXZ",
+    # "cc-pwCV(X+d)Z",
     "def2-SV(P)",
     "def2-SVP",
     "def2-SVPD",
@@ -191,12 +191,8 @@ BASIS_SETS = [
     "def2-QZVPPD",
 ]
 ALL_MOLECULES = []
-print("beginning loop")
-print(len(MOLECULES))
 for molecule in MOLECULES:
-    print(molecule)
     for basis in BASIS_SETS:
-        print(basis)
         ALL_MOLECULES.append(
             MolecularData(
                 geometry=molecule.geometry,
