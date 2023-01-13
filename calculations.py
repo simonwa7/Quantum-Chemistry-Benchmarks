@@ -138,7 +138,7 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
     for state, amplitude in enumerate(hf_state):
         if amplitude == 1:
             qubit_states = format(state, "#0{}b".format(molecule.n_qubits))
-            for i, qubit_state in enumerate(qubit_states):
+            for i, qubit_state in enumerate(qubit_states[2:]):
                 if qubit_state == "1":
                     reference_state[i] = 1
     tapered_hamiltonian = QubitTapering(hamiltonian).taper_it(ref_state=reference_state)
