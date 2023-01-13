@@ -293,7 +293,6 @@ MOLECULES = [
     ),
 ]
 
-import pdb
 
 DIATOMIC_MOLECULE_SCANS = []
 for molecule in MOLECULES:
