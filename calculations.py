@@ -166,5 +166,11 @@ METHOD_MAP = {
     "cisd": run_cisd,
     "ccsd": run_ccsd,
     "fci": run_fci,
-    # "nc_SingleSweep_magnitude": partial(run_nc, strategy="SingleSweep_magnitude"),
+    "nc_SingleSweep_magnitude": partial(run_nc, strategy="SingleSweep_magnitude"),
+    "nc_DFS_magnitude": partial(run_nc, strategy="DFS_magnitude"),
+    "nc_DFS_largest": partial(run_nc, strategy="DFS_largest"),
+    "nc_SingleSweep_CurrentOrder": partial(run_nc, strategy="SingleSweep_CurrentOrder"),
+    "nc_SingleSweep_random": partial(run_nc, strategy="SingleSweep_random"),
+    "nc_diag": partial(run_nc, strategy="diag"),
+    "nc_basis": partial(run_nc, strategy="basis"),
 }
