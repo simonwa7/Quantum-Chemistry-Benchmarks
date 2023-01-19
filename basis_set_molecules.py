@@ -1,5 +1,4 @@
 from openfermion.chem import MolecularData
-import numpy as np
 
 MOLECULES = [
     MolecularData(

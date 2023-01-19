@@ -131,9 +131,7 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
     nc_data["full-diagonalized_energy"] = gs_energy
 
     # 4. Tapering
-    hf_state = jw_hartree_fock_state(
-        int(molecule.n_electrons), int(molecule.n_orbitals)
-    )
+    hf_state = jw_hartree_fock_state(int(molecule.n_electrons), int(molecule.n_qubits))
     reference_state = np.zeros(molecule.n_qubits, dtype=int)
     for state, amplitude in enumerate(hf_state):
         if amplitude == 1:
@@ -152,12 +150,11 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
         cs_vqe = ContextualSubspace(
             tapered_hamiltonian, noncontextual_strategy=strategy
         )
+        nc_data["energy"] = cs_vqe.noncontextual_operator.energy
+        nc_data["cpu_time"] = process_time() - start
+        return nc_data
     except RuntimeError as e:
         raise AttributeError(e.__str__)
-
-    nc_data["energy"] = cs_vqe.noncontextual_operator.energy
-    nc_data["cpu_time"] = process_time() - start
-    return nc_data
 
 
 METHOD_MAP = {
