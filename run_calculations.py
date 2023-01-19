@@ -45,7 +45,7 @@ for molecule in MOLECULES:
             molecule_configuration[method_name] = METHOD_MAP[method_name](molecule)
             print(method_name, molecule_configuration[method_name]["energy"])
         except AttributeError as e:
-            error_running_calculation(method_name, molecule_configuration)
+            error_running_calculation(method_name, e)
             continue
 
     if molecule_configuration != preivous_configuration_calculations:

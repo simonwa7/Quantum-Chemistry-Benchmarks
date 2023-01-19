@@ -26,10 +26,10 @@ def get_calculation_methods_to_run(previous_results):
     return methods_to_calculate
 
 
-def error_running_calculation(method_name, molecule_configuration):
+def error_running_calculation(method_name, error_message):
     print(
         "Error calculating {} for current configuration:\n".format(method_name),
-        molecule_configuration,
+        error_message,
     )
 
 
