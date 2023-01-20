@@ -169,5 +169,5 @@ METHOD_MAP = {
     "nc_SingleSweep_CurrentOrder": partial(run_nc, strategy="SingleSweep_CurrentOrder"),
     "nc_SingleSweep_random": partial(run_nc, strategy="SingleSweep_random"),
     "nc_diag": partial(run_nc, strategy="diag"),
-    "nc_basis": partial(run_nc, strategy="basis"),
+    # "nc_basis": partial(run_nc, strategy="basis"),
 }
