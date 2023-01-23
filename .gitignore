@@ -1,2 +1,7 @@
 __pycache__/*
 timer.dat
+
+.ipynb_checkpoints/*
+.vscode/*
+orca/*
+symmer/*
