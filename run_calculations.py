@@ -44,7 +44,7 @@ for molecule in MOLECULES:
         try:
             molecule_configuration[method_name] = METHOD_MAP[method_name](molecule)
             print(method_name, molecule_configuration[method_name]["energy"])
-        except AttributeError as e:
+        except Exception as e:
             error_running_calculation(method_name, e)
             continue
 
