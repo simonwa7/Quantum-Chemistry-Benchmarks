@@ -1,14 +1,14 @@
 from openfermion.chem import MolecularData
 
 MOLECULES = [
-    # MolecularData(
-    #     geometry=[
-    #         ["H", [0.0, 0.0, 0.0]],
-    #         ["H", [0.0, 0.0, 0.7414]],
-    #     ],
-    #     basis="sto-3g",
-    #     multiplicity=1,
-    # ),
+    MolecularData(
+        geometry=[
+            ["H", [0.0, 0.0, 0.0]],
+            ["H", [0.0, 0.0, 0.7414]],
+        ],
+        basis="sto-3g",
+        multiplicity=1,
+    ),
     MolecularData(
         geometry=[
             ["Li", [0.0, 0.0, 0.0]],
