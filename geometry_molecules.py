@@ -306,8 +306,9 @@ for molecule in MOLECULES:
                 ],
                 basis=molecule.basis,
                 multiplicity=molecule.multiplicity,
+                charge=molecule.charge,
             )
-            for bond_length in np.linspace(0, 10, 1000)
+            for bond_length in np.linspace(0.5, 10, 100)
         ]
 
 MOLECULES += DIATOMIC_MOLECULE_SCANS
