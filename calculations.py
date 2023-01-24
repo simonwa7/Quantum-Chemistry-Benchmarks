@@ -5,7 +5,6 @@ from symmer.symplectic import PauliwordOp
 from symmer.utils import exact_gs_energy
 from symmer.projection import QubitTapering
 from symmer.projection import ContextualSubspace
-from openfermion.linalg import jw_hartree_fock_state
 import numpy as np
 from openfermion.transforms import get_fermion_operator, jordan_wigner
 from openfermionpsi4 import run_psi4
@@ -131,15 +130,16 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
     nc_data["full-diagonalized_energy"] = gs_energy
 
     # 4. Tapering
-    hf_state = jw_hartree_fock_state(int(molecule.n_electrons), int(molecule.n_qubits))
-    reference_state = np.zeros(molecule.n_qubits, dtype=int)
-    for state, amplitude in enumerate(hf_state):
-        if amplitude == 1:
-            qubit_states = format(state, "#0{}b".format(molecule.n_qubits))
-            for i, qubit_state in enumerate(qubit_states[2:]):
-                if qubit_state == "1":
-                    reference_state[i] = 1
-    tapered_hamiltonian = QubitTapering(hamiltonian).taper_it(ref_state=reference_state)
+    hartree_fock_array = np.hstack(
+        (
+            np.ones(molecule.n_electrons),
+            np.zeros(molecule.n_qubits - molecule.n_electrons),
+        )
+    )
+    hartree_fock_array = np.array(hartree_fock_array, dtype=int)
+    tapered_hamiltonian = QubitTapering(hamiltonian).taper_it(
+        ref_state=hartree_fock_array
+    )
 
     # 5. Calculate Energy Error from Tapering
     tapered_gs_energy, _ = exact_gs_energy(tapered_hamiltonian.to_sparse_matrix)
