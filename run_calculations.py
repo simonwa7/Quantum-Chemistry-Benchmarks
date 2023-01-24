@@ -53,6 +53,10 @@ for molecule in MOLECULES:
             error_running_calculation(method_name, e)
             continue
 
+    if not molecule_configuration.get("number_of_qubits", False):
+        molecule_configuration["number_of_qubits"] = molecule.n_qubits
+        configuration_updated = True
+
     if configuration_updated:
         if configuration_index is not None:
             DATA_DICTIONARY[molecule.name][configuration_index] = molecule_configuration
