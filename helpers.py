@@ -7,15 +7,15 @@ def get_matching_configuration(data, molecule_name, configuration):
     # Find entry with matching geometry, charge, and multiplicity
     configurations_calculated = data.get(molecule_name, [])
     if len(configurations_calculated) != 0:
-        for previous_configuration in data[molecule_name]:
+        for index, previous_configuration in enumerate(data[molecule_name]):
             matching_configuration = True
             for key in configuration.keys():
                 if configuration[key] != previous_configuration[key]:
                     matching_configuration = False
 
             if matching_configuration:
-                return previous_configuration
-    return configuration
+                return previous_configuration, index
+    return configuration, None
 
 
 def get_calculation_methods_to_run(previous_results):
@@ -56,7 +56,7 @@ def load_data(data_filename):
 
 def check_if_configuration_has_been_calculated(data, molecule_name, configuration):
     # This checks the data to see if the current configuration has already been calculated
-    previous_results = get_matching_configuration(data, molecule_name, configuration)
+    previous_results, _ = get_matching_configuration(data, molecule_name, configuration)
     if previous_results == configuration:
         return False
     return True

@@ -34,24 +34,32 @@ for molecule in MOLECULES:
         ),
     )
 
-    preivous_configuration_calculations = get_matching_configuration(
+    (
+        preivous_configuration_calculations,
+        configuration_index,
+    ) = get_matching_configuration(
         DATA_DICTIONARY, molecule.name, molecule_configuration
     )
 
     molecule_configuration = copy.deepcopy(preivous_configuration_calculations)
     methods_to_run = get_calculation_methods_to_run(preivous_configuration_calculations)
+    configuration_updated = False
     for method_name in methods_to_run:
         try:
+            configuration_updated = True
             molecule_configuration[method_name] = METHOD_MAP[method_name](molecule)
             print(method_name, molecule_configuration[method_name]["energy"])
         except Exception as e:
             error_running_calculation(method_name, e)
             continue
 
-    if molecule_configuration != preivous_configuration_calculations:
-        configurations_calculated = DATA_DICTIONARY.get(molecule.name, [])
-        configurations_calculated.append(molecule_configuration)
-        DATA_DICTIONARY[molecule.name] = configurations_calculated
+    if configuration_updated:
+        if configuration_index is not None:
+            DATA_DICTIONARY[molecule.name][configuration_index] = molecule_configuration
+        else:
+            configurations_calculated = DATA_DICTIONARY.get(molecule.name, [])
+            configurations_calculated.append(molecule_configuration)
+            DATA_DICTIONARY[molecule.name] = configurations_calculated
 
         with open(data_filename, "w") as f:
             f.write(json.dumps(DATA_DICTIONARY))
