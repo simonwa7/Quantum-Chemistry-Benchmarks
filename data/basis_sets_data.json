@@ -1901,7 +1901,13 @@
                 ],
                 "cpu_time": 0.03342400000000012
             },
-            "number_of_qubits": 8
+            "number_of_qubits": 8,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -0.9923972187618875,
+                "tapered-diagonalized_energy": -0.9923972187618953,
+                "energy": -0.7127043129195323,
+                "cpu_time": 0.5137377280000002
+            }
         }
     ],
     "H2_6-31g_singlet": [
@@ -1976,7 +1982,13 @@
                 ],
                 "cpu_time": 0.03694000000000042
             },
-            "number_of_qubits": 8
+            "number_of_qubits": 8,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -0.9964658214584482,
+                "tapered-diagonalized_energy": -0.9964658214584492,
+                "energy": -0.7241624744884645,
+                "cpu_time": 0.5725186079999998
+            }
         }
     ],
     "H1-He1_3-21g_singlet_1+": [
@@ -3800,7 +3812,13 @@
                 ],
                 "cpu_time": 0.01667994499999992
             },
-            "number_of_qubits": 8
+            "number_of_qubits": 8,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1516827321121506,
+                "tapered-diagonalized_energy": -1.1516827321121392,
+                "energy": -1.126733967110959,
+                "cpu_time": 1.9231777220000001
+            }
         }
     ],
     "H2_6-31++g_singlet": [
@@ -3885,7 +3903,13 @@
                 ],
                 "cpu_time": 0.0175725550000001
             },
-            "number_of_qubits": 12
+            "number_of_qubits": 12,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.151898362277039,
+                "tapered-diagonalized_energy": -1.1518983622770067,
+                "energy": -1.1268350454011404,
+                "cpu_time": 22.928721754
+            }
         }
     ],
     "H2_6-31g*_singlet": [
@@ -3960,7 +3984,13 @@
                 ],
                 "cpu_time": 0.017756455000000226
             },
-            "number_of_qubits": 8
+            "number_of_qubits": 8,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1516827321121572,
+                "tapered-diagonalized_energy": -1.1516827321121392,
+                "energy": -1.1267339671109566,
+                "cpu_time": 1.4979638009999974
+            }
         }
     ],
     "H2_6-31+g*_singlet": [
@@ -4035,7 +4065,13 @@
                 ],
                 "cpu_time": 0.017793433000000025
             },
-            "number_of_qubits": 8
+            "number_of_qubits": 8,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1516827321121519,
+                "tapered-diagonalized_energy": -1.1516827321121392,
+                "energy": -1.126733967110959,
+                "cpu_time": 1.8773734060000038
+            }
         }
     ],
     "H2_6-31++g*_singlet": [
@@ -4120,7 +4156,13 @@
                 ],
                 "cpu_time": 0.01773289499999997
             },
-            "number_of_qubits": 12
+            "number_of_qubits": 12,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1518983622770413,
+                "tapered-diagonalized_energy": -1.1518983622770076,
+                "energy": -1.1268350454011484,
+                "cpu_time": 15.706001954999998
+            }
         }
     ],
     "H2_6-311g_singlet": [
@@ -4205,7 +4247,13 @@
                 ],
                 "cpu_time": 0.017606468999999958
             },
-            "number_of_qubits": 12
+            "number_of_qubits": 12,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1534824786319244,
+                "tapered-diagonalized_energy": -1.1534824786319073,
+                "energy": -1.1279706567932186,
+                "cpu_time": 14.413328724000003
+            }
         }
     ],
     "H2_6-311+g_singlet": [
@@ -4290,7 +4338,13 @@
                 ],
                 "cpu_time": 0.017310669
             },
-            "number_of_qubits": 12
+            "number_of_qubits": 12,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.153482478631935,
+                "tapered-diagonalized_energy": -1.1534824786319167,
+                "energy": -1.1279706567923324,
+                "cpu_time": 10.437449990999994
+            }
         }
     ],
     "H2_6-311++g_singlet": [
@@ -4385,7 +4439,13 @@
                 ],
                 "cpu_time": 0.017702277999999794
             },
-            "number_of_qubits": 16
+            "number_of_qubits": 16,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1535353843114535,
+                "tapered-diagonalized_energy": -1.1535353843114082,
+                "energy": -1.1279710032099428,
+                "cpu_time": 1240.642728028
+            }
         }
     ],
     "H2_6-311g*_singlet": [
@@ -4470,7 +4530,13 @@
                 ],
                 "cpu_time": 0.018027999000000072
             },
-            "number_of_qubits": 12
+            "number_of_qubits": 12,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1534824786319202,
+                "tapered-diagonalized_energy": -1.1534824786319047,
+                "energy": -1.127970656793389,
+                "cpu_time": 10.358957941999961
+            }
         }
     ],
     "H2_6-311+g*_singlet": [
@@ -4555,7 +4621,13 @@
                 ],
                 "cpu_time": 0.017811061999999822
             },
-            "number_of_qubits": 12
+            "number_of_qubits": 12,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1534824786319329,
+                "tapered-diagonalized_energy": -1.1534824786319078,
+                "energy": -1.1279706567931715,
+                "cpu_time": 11.219333674999916
+            }
         }
     ],
     "H2_6-311++g*_singlet": [
@@ -4650,7 +4722,13 @@
                 ],
                 "cpu_time": 0.017758047000000055
             },
-            "number_of_qubits": 16
+            "number_of_qubits": 16,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1535353843114453,
+                "tapered-diagonalized_energy": -1.1535353843114053,
+                "energy": -1.1279710031540855,
+                "cpu_time": 888.4255903579997
+            }
         }
     ],
     "H2_6-311g**_singlet": [
@@ -5080,7 +5158,13 @@
                 ],
                 "cpu_time": 0.01575378099999991
             },
-            "number_of_qubits": 8
+            "number_of_qubits": 8,
+            "nc_SingleSweep_magnitude": {
+                "full-diagonalized_energy": -1.1480262282671996,
+                "tapered-diagonalized_energy": -1.1480262282671834,
+                "energy": -1.1245745498930537,
+                "cpu_time": 1.8908830469999884
+            }
         }
     ],
     "H2_def2-SVP_singlet": [
