@@ -54,8 +54,13 @@ for molecule in MOLECULES:
             continue
 
     if not molecule_configuration.get("number_of_qubits", False):
-        molecule_configuration["number_of_qubits"] = molecule.n_qubits
-        configuration_updated = True
+        try:
+            molecule.load()
+            if molecule.n_qubits is not None:
+                molecule_configuration["number_of_qubits"] = molecule.n_qubits
+                configuration_updated = True
+        except:
+            pass
 
     if configuration_updated:
         if configuration_index is not None:
