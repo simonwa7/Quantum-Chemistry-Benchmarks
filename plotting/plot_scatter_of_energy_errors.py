@@ -1,7 +1,9 @@
 import json
 import matplotlib.pyplot as plt
+import sys
 
-datafilename = "data/geometries_data.json"
+data_type = sys.argv[1]
+datafilename = "data/{}_data.json".format(data_type)
 with open(datafilename, "r") as f:
     data = json.loads(f.read())
 
@@ -71,4 +73,4 @@ for i, (method1, method2) in enumerate(
     ax.scatter(method1["errors"], method2["errors"], c=colors)
     ax.set_xlabel("Error from {}".format(method1["method"]))
     ax.set_ylabel("Error from {}".format(method2["method"]))
-plt.savefig("figures/classical_method_errors.pdf", dpi=300)
+plt.savefig("figures/classical_method_errors_{}.pdf".format(data_type), dpi=300)
