@@ -1,7 +1,7 @@
 import json
 import matplotlib.pyplot as plt
 
-datafilename = "data/cluster_psi4_statistics.json"
+datafilename = "data/geometries_data.json"
 with open(datafilename, "r") as f:
     data = json.loads(f.read())
 
@@ -16,13 +16,14 @@ color = 0
 for molecule_name, molecule_data in data.items():
 
     for configuration in molecule_data:
-        fci_energy = configuration["fci"]["energy"]
-        molecule_names.append(molecule_name)
-        colors.append(color)
-        hf_errors.append(abs(configuration["scf"]["energy"] - fci_energy))
-        mp2_errors.append(abs(configuration["mp2"]["energy"] - fci_energy))
-        cisd_errors.append(abs(configuration["cisd"]["energy"] - fci_energy))
-        ccsd_errors.append(abs(configuration["ccsd"]["energy"] - fci_energy))
+        if configuration.get("fci", False):
+            fci_energy = configuration["fci"]["energy"]
+            molecule_names.append(molecule_name)
+            colors.append(color)
+            hf_errors.append(abs(configuration["scf"]["energy"] - fci_energy))
+            mp2_errors.append(abs(configuration["mp2"]["energy"] - fci_energy))
+            cisd_errors.append(abs(configuration["cisd"]["energy"] - fci_energy))
+            ccsd_errors.append(abs(configuration["ccsd"]["energy"] - fci_energy))
 
     color += 1
 
@@ -70,4 +71,4 @@ for i, (method1, method2) in enumerate(
     ax.scatter(method1["errors"], method2["errors"], c=colors)
     ax.set_xlabel("Error from {}".format(method1["method"]))
     ax.set_ylabel("Error from {}".format(method2["method"]))
-plt.savefig("classical_method_errors.pdf", dpi=300)
+plt.savefig("figures/classical_method_errors.pdf", dpi=300)
