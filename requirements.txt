@@ -1,0 +1,2 @@
+openfermionpsi4>=0.5
+openfermion>=1.5.1
