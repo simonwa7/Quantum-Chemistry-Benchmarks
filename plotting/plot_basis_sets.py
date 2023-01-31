@@ -15,6 +15,8 @@ numbers_of_qubits = []
 methods = []
 errors = []
 times = []
+energies = []
+fci_energies = []
 
 for molecule_name, molecule_data in data.items():
     name = molecule_name[: molecule_name.find("_")]
@@ -23,7 +25,8 @@ for molecule_name, molecule_data in data.items():
     if MOLECULE == name:
 
         for configuration in molecule_data:
-            fci_energy = data[MOLECULE + "_def2-TZVPPD_singlet"][0]["fci"]["energy"]
+            if configuration.get("fci", False):
+                fci_energies.append(configuration["fci"]["energy"])
 
             for method in ["hf", "mp2", "cisd", "ccsd"]:
                 if method == "hf":
@@ -33,10 +36,12 @@ for molecule_name, molecule_data in data.items():
                     basis_sets.append(basis_set)
                     numbers_of_qubits.append(configuration["number_of_qubits"])
                     methods.append(method)
-                    error = abs(configuration[method]["energy"] - fci_energy)
-                    assert error >= 0.0
-                    errors.append(error)
+                    energies.append(configuration[method]["energy"])
                     times.append(configuration[method]["cpu_time"])
+
+lowest_fci_energy = min(fci_energies)
+for energy in energies:
+    errors.append(abs(energy - lowest_fci_energy))
 
 data = {
     "Molecule": molecule_names,
@@ -56,8 +61,8 @@ plt.rc("xtick", labelsize=10)  # fontsize of the x tick labels
 plt.rc("ytick", labelsize=10)  # fontsize of the y tick labels
 plt.rc("legend", fontsize=10)  # fontsize of the legend
 
-H2O_data = data[data["Molecule"] == MOLECULE]
-sns.scatterplot(data=H2O_data, x="Number of Qubits", y="Error", hue="Method")
+data = data[data["Molecule"] == MOLECULE]
+sns.scatterplot(data=data, x="Number of Qubits", y="Error", hue="Method")
 plt.yscale("log")
 plt.title(MOLECULE)
 plt.legend(loc="lower left")
