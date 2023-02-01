@@ -1,9 +1,7 @@
 import json
 import matplotlib.pyplot as plt
-import sys
 
-data_type = sys.argv[1]
-datafilename = "data/{}_data.json".format(data_type)
+datafilename = "data/basis_sets_data.json"
 with open(datafilename, "r") as f:
     data = json.loads(f.read())
 
@@ -12,13 +10,14 @@ hf_errors = []
 mp2_errors = []
 cisd_errors = []
 ccsd_errors = []
+nc_single_sweep_magnitude_errors = []
 molecule_names = []
 colors = []
 color = 0
 for molecule_name, molecule_data in data.items():
 
     for configuration in molecule_data:
-        if configuration.get("fci", False):
+        if configuration.get("nc_SingleSweep_magnitude", False):
             fci_energy = configuration["fci"]["energy"]
             molecule_names.append(molecule_name)
             colors.append(color)
@@ -26,14 +25,17 @@ for molecule_name, molecule_data in data.items():
             mp2_errors.append(abs(configuration["mp2"]["energy"] - fci_energy))
             cisd_errors.append(abs(configuration["cisd"]["energy"] - fci_energy))
             ccsd_errors.append(abs(configuration["ccsd"]["energy"] - fci_energy))
+            nc_single_sweep_magnitude_errors.append(
+                abs(configuration["nc_SingleSweep_magnitude"]["energy"] - fci_energy)
+            )
 
     color += 1
 
 
 fig, axes = plt.subplots(
-    3,
+    6,
     2,
-    figsize=(18, 12),
+    figsize=(18, 24),
 )
 
 plt.rc("font", size=10)  # controls default text size
@@ -65,6 +67,10 @@ for i, (method1, method2) in enumerate(
                 "method": "MP2",
                 "errors": mp2_errors,
             },
+            {
+                "method": "nc_SingleSweep_magnitude",
+                "errors": nc_single_sweep_magnitude_errors,
+            },
         ],
         2,
     )
@@ -73,4 +79,4 @@ for i, (method1, method2) in enumerate(
     ax.scatter(method1["errors"], method2["errors"], c=colors)
     ax.set_xlabel("Error from {}".format(method1["method"]))
     ax.set_ylabel("Error from {}".format(method2["method"]))
-plt.savefig("figures/classical_method_errors_{}.pdf".format(data_type), dpi=300)
+plt.savefig("figures/nc_errors.pdf", dpi=300)
