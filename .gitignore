@@ -5,3 +5,5 @@ timer.dat
 .vscode/*
 orca/*
 symmer/*
+
+**/__pycache__/*
