@@ -5,6 +5,37 @@ import matplotlib.colors as mcolors
 import numpy as np
 
 
+def get_method_errors_and_labels(data, method, label):
+    method_energies = []
+    molecule_names = []
+    labels = []
+    fci_energies = {}
+
+    for molecule_name, molecule_data in data.items():
+        name = molecule_name[: molecule_name.find("_")]
+
+        if not fci_energies.get(name, False):
+            fci_energies[name] = 1e10
+
+        for configuration in molecule_data:
+            if (
+                configuration.get("fci", False)
+                and configuration.get(method, False)
+                and configuration.get(label, False)
+            ):
+                molecule_names.append(name)
+                fci_energies[name] = min(
+                    fci_energies[name], configuration["fci"]["energy"]
+                )
+                method_energies.append(configuration[method]["energy"])
+                labels.append(configuration[label])
+
+    return [
+        abs(method_energy - fci_energies[molecule_name])
+        for molecule_name, method_energy in zip(molecule_names, method_energies)
+    ], labels
+
+
 def plot_method_errors_against_eachother(data_filename, methodx, methody, legend=False):
 
     np.random.seed(2)
