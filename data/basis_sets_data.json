@@ -30,6 +30,7 @@
                 "cpu_time": 0.03311200000000003,
             },
             "number_of_qubits": 4,
+            "largest_atomic_number": 1,
         }
     ],
     "H1-He1_sto-3g_singlet_1+": [
@@ -62,6 +63,7 @@
                 "orbital_energies": [-1.6345788875587237, -0.1707925852453568],
                 "cpu_time": 0.03342400000000012,
             },
+            "largest_atomic_number": 2,
         }
     ],
     "H3_sto-3g_singlet_1+": [
@@ -118,6 +120,7 @@
                 ],
                 "cpu_time": 0.033202000000000176,
             },
+            "largest_atomic_number": 1,
         }
     ],
     "H3_sto-3g_doublet": [
@@ -174,6 +177,7 @@
                 ],
                 "cpu_time": 0.03444999999999965,
             },
+            "largest_atomic_number": 1,
         }
     ],
     "H1-Li1_sto-3g_singlet": [
@@ -242,6 +246,7 @@
                 "cpu_time": 0.03206799999999976,
             },
             "number_of_qubits": 12,
+            "largest_atomic_number": 3,
         }
     ],
     "H4_sto-3g_singlet": [
@@ -304,6 +309,7 @@
                 ],
                 "cpu_time": 0.035053999999999697,
             },
+            "largest_atomic_number": 1,
         }
     ],
     "H6_sto-3g_singlet": [
@@ -378,6 +384,7 @@
                 ],
                 "cpu_time": 0.037043999999999855,
             },
+            "largest_atomic_number": 1,
         }
     ],
     "H8_sto-3g_singlet": [
@@ -464,6 +471,7 @@
                 ],
                 "cpu_time": 0.03622399999999981,
             },
+            "largest_atomic_number": 1,
         }
     ],
     "H10_sto-3g_singlet": [
@@ -562,6 +570,7 @@
                 ],
                 "cpu_time": 0.03811600000000048,
             },
+            "largest_atomic_number": 1,
         }
     ],
     "H12_sto-3g_singlet": [
@@ -672,6 +681,7 @@
                 ],
                 "cpu_time": 0.03831600000000002,
             },
+            "largest_atomic_number": 1,
         }
     ],
     "H2-Be1_sto-3g_singlet": [
@@ -749,6 +759,7 @@
                 "cpu_time": 0.03619200000000067,
             },
             "number_of_qubits": 14,
+            "largest_atomic_number": 4,
         },
         {
             "geometry": [
@@ -824,6 +835,7 @@
                 "cpu_time": 0.013329686000000063,
             },
             "number_of_qubits": 14,
+            "largest_atomic_number": 4,
         },
     ],
     "H1-Na1_sto-3g_singlet": [
@@ -911,7 +923,8 @@
                 ],
                 "cpu_time": 0.033786000000000094,
             },
-        }
+            "largest_atomic_number": 11,
+        },
     ],
     "H1-K1_sto-3g_singlet": [
         {
@@ -1018,6 +1031,7 @@
                 ],
                 "cpu_time": 0.03307400000000005,
             },
+            "largest_atomic_number": 19
         }
     ],
     "H2-O1_sto-3g_singlet": [
@@ -1169,7 +1183,8 @@
                 "cpu_time": 0.012848144000000339,
             },
             "number_of_qubits": 14,
-        },
+            "largest_atomic_number": 8
+        }
     ],
     "C1-O2_sto-3g_singlet": [
         {
@@ -1283,8 +1298,9 @@
                     1.2441097852737455,
                     1.6009356270316133,
                 ],
-                "cpu_time": 0.03431799999999985,
+                "cpu_time": 0.03431799999999985
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2_3-21g_singlet": [
@@ -1373,6 +1389,7 @@
                 "energy": 0.371880575222148,
                 "cpu_time": 0.5708073670000005,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-31g_singlet": [
@@ -1461,6 +1478,7 @@
                 "energy": 0.7397165161378074,
                 "cpu_time": 0.6420202380000006,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H1-He1_3-21g_singlet_1+": [
@@ -1518,6 +1536,7 @@
                 ],
                 "cpu_time": 0.03366599999999931,
             },
+            "largest_atomic_number": 2
         }
     ],
     "H1-He1_6-31g_singlet_1+": [
@@ -1575,6 +1594,7 @@
                 ],
                 "cpu_time": 0.032740000000000435,
             },
+            "largest_atomic_number": 2
         }
     ],
     "H1-F1_sto-3g_singlet": [
@@ -1642,6 +1662,7 @@
                 ],
                 "cpu_time": 0.03362600000000082,
             },
+            "largest_atomic_number": 9
         }
     ],
     "H1-F1_3-21g_singlet": [
@@ -1734,6 +1755,7 @@
                 ],
                 "cpu_time": 0.03522399999999948,
             },
+            "largest_atomic_number": 9
         }
     ],
     "H1-Li1_3-21g_singlet": [
@@ -1827,6 +1849,7 @@
                 "cpu_time": 0.033938000000000024,
             },
             "number_of_qubits": 22,
+            "largest_atomic_number": 3
         }
     ],
     "H1-B1_sto-3g_singlet": [
@@ -1894,6 +1917,7 @@
                 ],
                 "cpu_time": 0.034893999999999536,
             },
+            "largest_atomic_number": 5
         }
     ],
     "H1-N1_sto-3g_singlet": [
@@ -1961,6 +1985,7 @@
                 ],
                 "cpu_time": 0.03361200000000064,
             },
+            "largest_atomic_number": 7
         }
     ],
     "H2-C1_sto-3g_singlet": [
@@ -2037,6 +2062,7 @@
                 ],
                 "cpu_time": 0.03510999999999953,
             },
+            "largest_atomic_number": 6
         }
     ],
     "H3-N1_sto-3g_singlet": [
@@ -2119,6 +2145,7 @@
                 ],
                 "cpu_time": 0.035994000000000526,
             },
+            "largest_atomic_number": 7
         }
     ],
     "F2_sto-3g_singlet": [
@@ -2206,6 +2233,7 @@
                 ],
                 "cpu_time": 0.03334400000000004,
             },
+            "largest_atomic_number": 9
         }
     ],
     "N2_sto-3g_singlet": [
@@ -2293,6 +2321,7 @@
                 ],
                 "cpu_time": 0.03341599999999989,
             },
+            "largest_atomic_number": 7
         }
     ],
     "O2_sto-3g_singlet": [
@@ -2378,8 +2407,9 @@
                     0.18881475831574912,
                     0.7345248458521719,
                 ],
-                "cpu_time": 0.03392600000000012,
+                "cpu_time": 0.03392600000000012
             },
+            "largest_atomic_number": 8
         }
     ],
     "C1-O1_sto-3g_singlet": [
@@ -2465,8 +2495,9 @@
                     0.3134092322645095,
                     1.0400720397718606,
                 ],
-                "cpu_time": 0.03323199999999993,
+                "cpu_time": 0.03323199999999993
             },
+            "largest_atomic_number": 8
         }
     ],
     "H1-Cl1_sto-3g_singlet": [
@@ -2552,8 +2583,9 @@
                     -0.42317996702130944,
                     0.40425673866591955,
                 ],
-                "cpu_time": 0.033034000000000674,
+                "cpu_time": 0.033034000000000674
             },
+            "largest_atomic_number": 17
         }
     ],
     "H1-Rb1_sto-3g_singlet": [
@@ -2704,8 +2736,9 @@
                     0.5736444196288748,
                     0.7304611832138049,
                 ],
-                "cpu_time": 0.05505400000000016,
+                "cpu_time": 0.05505400000000016
             },
+            "largest_atomic_number": 37
         }
     ],
     "H2-S1_sto-3g_singlet": [
@@ -2800,8 +2833,9 @@
                     0.467983888424227,
                     0.5389989959893811,
                 ],
-                "cpu_time": 0.06416600000000017,
+                "cpu_time": 0.06416600000000017
             },
+            "largest_atomic_number": 16
         }
     ],
     "H2-Mg1_sto-3g_singlet": [
@@ -2896,8 +2930,9 @@
                     0.5008841284086291,
                     0.9044510917633733,
                 ],
-                "cpu_time": 0.0329600000000001,
+                "cpu_time": 0.0329600000000001
             },
+            "largest_atomic_number": 12
         }
     ],
     "H2_6-31+g_singlet": [
@@ -2986,6 +3021,7 @@
                 "energy": 1.439122508021091,
                 "cpu_time": 1.883668698000001,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-31++g_singlet": [
@@ -3084,6 +3120,7 @@
                 "energy": 2.8308021865363573,
                 "cpu_time": 15.898027990000003,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-31g*_singlet": [
@@ -3172,6 +3209,7 @@
                 "energy": 1.1459243947192388,
                 "cpu_time": 1.8851527479999959,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-31+g*_singlet": [
@@ -3260,6 +3298,7 @@
                 "energy": 2.0610302562230554,
                 "cpu_time": 2.050858328000004,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-31++g*_singlet": [
@@ -3358,6 +3397,7 @@
                 "energy": 3.0630087050799597,
                 "cpu_time": 23.577993483,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311g_singlet": [
@@ -3456,6 +3496,7 @@
                 "energy": 7.0035403773228255,
                 "cpu_time": 7.324736531999974,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311+g_singlet": [
@@ -3554,6 +3595,7 @@
                 "energy": 7.2108452037881925,
                 "cpu_time": 7.439941822000037,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311++g_singlet": [
@@ -3662,6 +3704,7 @@
                 "energy": 7.181759280751042,
                 "cpu_time": 1303.8741662499997,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311g*_singlet": [
@@ -3760,6 +3803,7 @@
                 "energy": 4.91924623445111,
                 "cpu_time": 12.38265502899958,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311+g*_singlet": [
@@ -3858,6 +3902,7 @@
                 "energy": 7.502923614283588,
                 "cpu_time": 11.737546338999891,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311++g*_singlet": [
@@ -3966,6 +4011,7 @@
                 "energy": 8.51379481147533,
                 "cpu_time": 1603.9723125130004,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311g**_singlet": [
@@ -4064,6 +4110,7 @@
                 "cpu_time": 0.017339008999999628,
             },
             "number_of_qubits": 24,
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311+g**_singlet": [
@@ -4162,6 +4209,7 @@
                 "cpu_time": 0.018306920999999754,
             },
             "number_of_qubits": 24,
+            "largest_atomic_number": 1
         }
     ],
     "H2_6-311++g**_singlet": [
@@ -4270,6 +4318,7 @@
                 "cpu_time": 0.0175549359999998,
             },
             "number_of_qubits": 28,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-SV(P)_singlet": [
@@ -4358,6 +4407,7 @@
                 "energy": -1.1245745498925537,
                 "cpu_time": 1.8918509210016055,
             },
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-SVP_singlet": [
@@ -4446,6 +4496,7 @@
                 "cpu_time": 0.01617546199999964,
             },
             "number_of_qubits": 20,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-SVPD_singlet": [
@@ -4564,6 +4615,7 @@
                 "cpu_time": 0.016479810999999955,
             },
             "number_of_qubits": 32,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-TZVP_singlet": [
@@ -4662,6 +4714,7 @@
                 "cpu_time": 0.016935795999999392,
             },
             "number_of_qubits": 24,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-TZVPD_singlet": [
@@ -4790,6 +4843,7 @@
                 "cpu_time": 0.017969370999999512,
             },
             "number_of_qubits": 36,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-TZVPP_singlet": [
@@ -4968,6 +5022,7 @@
                 "cpu_time": 0.019450270000000103,
             },
             "number_of_qubits": 56,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-TZVPPD_singlet": [
@@ -5176,6 +5231,7 @@
                 "cpu_time": 0.022263436999999442,
             },
             "number_of_qubits": 68,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-QZVP_singlet": [
@@ -5514,6 +5570,7 @@
                 "cpu_time": 0.05949926199999922,
             },
             "number_of_qubits": 120,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-QZVPD_singlet": [
@@ -5882,6 +5939,7 @@
                 "cpu_time": 0.07791995399999951,
             },
             "number_of_qubits": 132,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-QZVPP_singlet": [
@@ -6220,6 +6278,7 @@
                 "cpu_time": 0.05880235600000017,
             },
             "number_of_qubits": 120,
+            "largest_atomic_number": 1
         }
     ],
     "H2_def2-QZVPPD_singlet": [
@@ -6588,6 +6647,7 @@
                 "cpu_time": 0.07963111100000031,
             },
             "number_of_qubits": 132,
+            "largest_atomic_number": 1
         }
     ],
     "H1-Li1_6-31g_singlet": [
@@ -6681,6 +6741,7 @@
                 "cpu_time": 0.017741054000000034,
             },
             "number_of_qubits": 22,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-31+g_singlet": [
@@ -6794,6 +6855,7 @@
                 "cpu_time": 0.01813943900000048,
             },
             "number_of_qubits": 30,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-31++g_singlet": [
@@ -6912,6 +6974,7 @@
                 "cpu_time": 0.018836151999998663,
             },
             "number_of_qubits": 32,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-31g*_singlet": [
@@ -7035,6 +7098,7 @@
                 "cpu_time": 0.018528574999999492,
             },
             "number_of_qubits": 34,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-31+g*_singlet": [
@@ -7178,6 +7242,7 @@
                 "cpu_time": 0.019217706000000945,
             },
             "number_of_qubits": 42,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-31++g*_singlet": [
@@ -7326,6 +7391,7 @@
                 "cpu_time": 0.01986909200000042,
             },
             "number_of_qubits": 44,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311g_singlet": [
@@ -7444,6 +7510,7 @@
                 "cpu_time": 0.01817814300000009,
             },
             "number_of_qubits": 32,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311+g_singlet": [
@@ -7582,6 +7649,7 @@
                 "cpu_time": 0.019706013999998717,
             },
             "number_of_qubits": 40,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311++g_singlet": [
@@ -7725,6 +7793,7 @@
                 "cpu_time": 0.01882796599999992,
             },
             "number_of_qubits": 42,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311g*_singlet": [
@@ -7868,6 +7937,7 @@
                 "cpu_time": 0.018729891999999637,
             },
             "number_of_qubits": 42,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311+g*_singlet": [
@@ -8031,6 +8101,7 @@
                 "cpu_time": 0.020565431999999717,
             },
             "number_of_qubits": 50,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311++g*_singlet": [
@@ -8199,6 +8270,7 @@
                 "cpu_time": 0.021918471000001105,
             },
             "number_of_qubits": 52,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311g**_singlet": [
@@ -8357,6 +8429,7 @@
                 "cpu_time": 0.020719648000000035,
             },
             "number_of_qubits": 48,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311+g**_singlet": [
@@ -8535,6 +8608,7 @@
                 "cpu_time": 0.0219970930000013,
             },
             "number_of_qubits": 56,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_6-311++g**_singlet": [
@@ -8718,6 +8792,7 @@
                 "cpu_time": 0.02235236599999979,
             },
             "number_of_qubits": 58,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-SV(P)_singlet": [
@@ -8811,6 +8886,7 @@
                 "cpu_time": 0.01786076099999967,
             },
             "number_of_qubits": 22,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-SVP_singlet": [
@@ -8919,6 +8995,7 @@
                 "cpu_time": 0.018382276999998837,
             },
             "number_of_qubits": 28,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-SVPD_singlet": [
@@ -9057,6 +9134,7 @@
                 "cpu_time": 0.019099161999999836,
             },
             "number_of_qubits": 40,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-TZVP_singlet": [
@@ -9195,6 +9273,7 @@
                 "cpu_time": 0.019786083999999704,
             },
             "number_of_qubits": 40,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-TZVPD_singlet": [
@@ -9363,6 +9442,7 @@
                 "cpu_time": 0.021573634999999314,
             },
             "number_of_qubits": 52,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-TZVPP_singlet": [
@@ -9566,6 +9646,7 @@
                 "cpu_time": 0.027567027999999993,
             },
             "number_of_qubits": 66,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-TZVPPD_singlet": [
@@ -9799,6 +9880,7 @@
                 "cpu_time": 0.03298979099999855,
             },
             "number_of_qubits": 78,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-QZVP_singlet": [
@@ -10162,6 +10244,7 @@
                 "cpu_time": 0.19212747099999916,
             },
             "number_of_qubits": 130,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-QZVPD_singlet": [
@@ -10540,6 +10623,7 @@
                 "cpu_time": 0.19399414999999998,
             },
             "number_of_qubits": 136,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-QZVPP_singlet": [
@@ -10903,6 +10987,7 @@
                 "cpu_time": 0.1643778230000006,
             },
             "number_of_qubits": 130,
+            "largest_atomic_number": 3
         }
     ],
     "H1-Li1_def2-QZVPPD_singlet": [
@@ -11281,6 +11366,7 @@
                 "cpu_time": 0.1965043469999994,
             },
             "number_of_qubits": 136,
+            "largest_atomic_number": 3
         }
     ],
     "H2-Be1_3-21g_singlet": [
@@ -11388,6 +11474,7 @@
                 "cpu_time": 0.020109971000000115,
             },
             "number_of_qubits": 26,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-31g_singlet": [
@@ -11495,6 +11582,7 @@
                 "cpu_time": 0.02041972099999967,
             },
             "number_of_qubits": 26,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-31+g_singlet": [
@@ -11622,6 +11710,7 @@
                 "cpu_time": 0.02097650299999998,
             },
             "number_of_qubits": 34,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-31++g_singlet": [
@@ -11759,6 +11848,7 @@
                 "cpu_time": 0.020716465000003126,
             },
             "number_of_qubits": 38,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-31g*_singlet": [
@@ -11896,6 +11986,7 @@
                 "cpu_time": 0.02153658299999961,
             },
             "number_of_qubits": 38,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-31+g*_singlet": [
@@ -12053,6 +12144,7 @@
                 "cpu_time": 0.02267819599999754,
             },
             "number_of_qubits": 46,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-31++g*_singlet": [
@@ -12220,6 +12312,7 @@
                 "cpu_time": 0.022757283999997213,
             },
             "number_of_qubits": 50,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311g_singlet": [
@@ -12357,6 +12450,7 @@
                 "cpu_time": 0.021992611999998246,
             },
             "number_of_qubits": 38,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311+g_singlet": [
@@ -12514,6 +12608,7 @@
                 "cpu_time": 0.02213472299999708,
             },
             "number_of_qubits": 46,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311++g_singlet": [
@@ -12681,6 +12776,7 @@
                 "cpu_time": 0.022697740999998217,
             },
             "number_of_qubits": 50,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311g*_singlet": [
@@ -12843,6 +12939,7 @@
                 "cpu_time": 0.02244690999999932,
             },
             "number_of_qubits": 48,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311+g*_singlet": [
@@ -13025,6 +13122,7 @@
                 "cpu_time": 0.023725062000000463,
             },
             "number_of_qubits": 56,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311++g*_singlet": [
@@ -13217,6 +13315,7 @@
                 "cpu_time": 0.026274276000002317,
             },
             "number_of_qubits": 60,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311g**_singlet": [
@@ -13409,6 +13508,7 @@
                 "cpu_time": 0.024664495999999758,
             },
             "number_of_qubits": 60,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311+g**_singlet": [
@@ -13621,6 +13721,7 @@
                 "cpu_time": 0.030779887000001338,
             },
             "number_of_qubits": 68,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_6-311++g**_singlet": [
@@ -13843,6 +13944,7 @@
                 "cpu_time": 0.027997243000001504,
             },
             "number_of_qubits": 72,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-SV(P)_singlet": [
@@ -13950,6 +14052,7 @@
                 "cpu_time": 0.017474109000001903,
             },
             "number_of_qubits": 26,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-SVP_singlet": [
@@ -14087,6 +14190,7 @@
                 "cpu_time": 0.017341116999997297,
             },
             "number_of_qubits": 38,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-SVPD_singlet": [
@@ -14269,6 +14373,7 @@
                 "cpu_time": 0.021837323999999825,
             },
             "number_of_qubits": 56,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-TZVP_singlet": [
@@ -14466,6 +14571,7 @@
                 "cpu_time": 0.02289071300000245,
             },
             "number_of_qubits": 62,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-TZVPD_singlet": [
@@ -14708,6 +14814,7 @@
                 "cpu_time": 0.041764511000000226,
             },
             "number_of_qubits": 80,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-TZVPP_singlet": [
@@ -14985,6 +15092,7 @@
                 "cpu_time": 0.07498262800000077,
             },
             "number_of_qubits": 94,
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-TZVPPD_singlet": [
@@ -15307,6 +15415,7 @@
                 "cpu_time": 0.07975931299999983,
             },
             "number_of_qubits": 112,
+            "largest_atomic_number": 4
         }
     ],
     "H2-O1_3-21g_singlet": [
@@ -15414,6 +15523,7 @@
                 "cpu_time": 0.020823174000000222,
             },
             "number_of_qubits": 26,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-31g_singlet": [
@@ -15521,6 +15631,7 @@
                 "cpu_time": 0.01878239100000023,
             },
             "number_of_qubits": 26,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-31+g_singlet": [
@@ -15648,6 +15759,7 @@
                 "cpu_time": 0.019668518999999662,
             },
             "number_of_qubits": 34,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-31++g_singlet": [
@@ -15785,6 +15897,7 @@
                 "cpu_time": 0.02033733200000043,
             },
             "number_of_qubits": 38,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-31g*_singlet": [
@@ -15922,6 +16035,7 @@
                 "cpu_time": 0.019157490000000443,
             },
             "number_of_qubits": 38,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-31+g*_singlet": [
@@ -16079,6 +16193,7 @@
                 "cpu_time": 0.0250031660000003,
             },
             "number_of_qubits": 46,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311g_singlet": [
@@ -16216,6 +16331,7 @@
                 "cpu_time": 0.021301974,
             },
             "number_of_qubits": 38,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311+g_singlet": [
@@ -16373,6 +16489,7 @@
                 "cpu_time": 0.01624636800000001,
             },
             "number_of_qubits": 46,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-SV(P)_singlet": [
@@ -16505,6 +16622,7 @@
                 "cpu_time": 0.013566092000000474,
             },
             "number_of_qubits": 36,
+            "largest_atomic_number": 8
         }
     ],
     "H2-Be1_def2-QZVP_singlet": [
@@ -16925,6 +17043,7 @@
                 ],
                 "cpu_time": 0.3806459120000003,
             },
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-QZVPD_singlet": [
@@ -17369,6 +17488,7 @@
                 ],
                 "cpu_time": 0.5829512919999997,
             },
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-QZVPP_singlet": [
@@ -17789,6 +17909,7 @@
                 ],
                 "cpu_time": 0.4137107360000005,
             },
+            "largest_atomic_number": 4
         }
     ],
     "H2-Be1_def2-QZVPPD_singlet": [
@@ -18233,6 +18354,7 @@
                 ],
                 "cpu_time": 0.5368152119999987,
             },
+            "largest_atomic_number": 4
         }
     ],
     "H2-O1_6-31++g*_singlet": [
@@ -18369,6 +18491,7 @@
                 ],
                 "cpu_time": 0.016791494999999657,
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311++g_singlet": [
@@ -18505,6 +18628,7 @@
                 ],
                 "cpu_time": 0.01650569799999957,
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311g*_singlet": [
@@ -18667,6 +18791,7 @@
                 ],
                 "cpu_time": 0.018526870000000528,
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311+g*_singlet": [
@@ -18815,6 +18940,7 @@
                 ],
                 "cpu_time": 0.017321619999998816,
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311++g*_singlet": [
@@ -18971,6 +19097,7 @@
                 ],
                 "cpu_time": 0.01791478400000024,
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311g**_singlet": [
@@ -19127,6 +19254,7 @@
                 ],
                 "cpu_time": 0.01790970799999947,
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311+g**_singlet": [
@@ -19299,6 +19427,7 @@
                 ],
                 "cpu_time": 0.02066427299999951,
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_6-311++g**_singlet": [
@@ -19479,6 +19608,7 @@
                 ],
                 "cpu_time": 0.022242595999999892,
             },
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-SVP_singlet": [
@@ -19491,6 +19621,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 48,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-SVPD_singlet": [
@@ -19503,6 +19634,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 78,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-TZVP_singlet": [
@@ -19515,6 +19647,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 86,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-TZVPD_singlet": [
@@ -19527,6 +19660,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 116,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-TZVPP_singlet": [
@@ -19539,6 +19673,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 118,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-TZVPPD_singlet": [
@@ -19551,6 +19686,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 148,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-QZVP_singlet": [
@@ -19563,6 +19699,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 234,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-QZVPD_singlet": [
@@ -19575,6 +19712,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 264,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-QZVPP_singlet": [
@@ -19587,6 +19725,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 234,
+            "largest_atomic_number": 8
         }
     ],
     "H2-O1_def2-QZVPPD_singlet": [
@@ -19599,6 +19738,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 264,
+            "largest_atomic_number": 8
         }
     ],
     "H10-C8_sto-3g_singlet": [
@@ -19626,6 +19766,7 @@
             "charge": 0,
             "multiplicity": 1,
             "number_of_qubits": 100,
+            "largest_atomic_number": 6
         }
     ],
 }
