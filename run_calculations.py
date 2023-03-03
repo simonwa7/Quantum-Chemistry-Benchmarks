@@ -32,6 +32,7 @@ for molecule in MOLECULES:
         "-------Working on {} (configuration below)-------\n{}".format(
             molecule.name, molecule_configuration
         ),
+        flush=True,
     )
 
     (
