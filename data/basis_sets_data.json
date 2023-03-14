@@ -62,7 +62,13 @@
                 "cpu_time": 0.03311200000000003
             },
             "number_of_qubits": 4,
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -0.9331636991145502,
+                "tapered-diagonalized_energy": -0.9331636991145503,
+                "energy": -0.5725759458475425,
+                "cpu_time": 0.3279638600000001
+            }
         }
     ],
     "H1-He1_sto-3g_singlet_1+": [
@@ -1948,7 +1954,13 @@
                 "energy": 0.371880575222148,
                 "cpu_time": 0.5708073670000005
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -0.992397218761889,
+                "tapered-diagonalized_energy": -0.9923972187618934,
+                "energy": -0.7127043128039307,
+                "cpu_time": 0.5832252630000001
+            }
         }
     ],
     "H2_6-31g_singlet": [
@@ -2054,7 +2066,13 @@
                 "energy": 0.7397165161378074,
                 "cpu_time": 0.6420202380000006
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -0.9964658214584476,
+                "tapered-diagonalized_energy": -0.9964658214584499,
+                "energy": -0.7241624742359302,
+                "cpu_time": 0.5571216410000002
+            }
         }
     ],
     "H1-He1_3-21g_singlet_1+": [
@@ -3926,7 +3944,13 @@
                 "energy": 1.439122508021091,
                 "cpu_time": 1.883668698000001
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1516827321121557,
+                "tapered-diagonalized_energy": -1.1516827321121392,
+                "energy": -1.126733967110959,
+                "cpu_time": 1.7356254449999993
+            }
         }
     ],
     "H2_6-31++g_singlet": [
@@ -4042,7 +4066,13 @@
                 "energy": 2.8308021865363573,
                 "cpu_time": 15.898027990000003
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1518983622770436,
+                "tapered-diagonalized_energy": -1.1518983622770078,
+                "energy": -1.1268350454011498,
+                "cpu_time": 25.976056297000003
+            }
         }
     ],
     "H2_6-31g*_singlet": [
@@ -4148,7 +4178,13 @@
                 "energy": 1.1459243947192388,
                 "cpu_time": 1.8851527479999959
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1516827321121514,
+                "tapered-diagonalized_energy": -1.1516827321121392,
+                "energy": -1.126733967110959,
+                "cpu_time": 1.7815974510000032
+            }
         }
     ],
     "H2_6-31+g*_singlet": [
@@ -4254,7 +4290,13 @@
                 "energy": 2.0610302562230554,
                 "cpu_time": 2.050858328000004
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1516827321121477,
+                "tapered-diagonalized_energy": -1.1516827321121392,
+                "energy": -1.126733967110959,
+                "cpu_time": 1.6208158379999986
+            }
         }
     ],
     "H2_6-31++g*_singlet": [
@@ -4370,7 +4412,13 @@
                 "energy": 3.0630087050799597,
                 "cpu_time": 23.577993483
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1518983622770407,
+                "tapered-diagonalized_energy": -1.1518983622770074,
+                "energy": -1.1268350454011518,
+                "cpu_time": 17.680728836
+            }
         }
     ],
     "H2_6-311g_singlet": [
@@ -4486,7 +4534,13 @@
                 "energy": 7.0035403773228255,
                 "cpu_time": 7.324736531999974
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1534824786319184,
+                "tapered-diagonalized_energy": -1.153482478631908,
+                "energy": -1.1279706567934136,
+                "cpu_time": 13.267230616999996
+            }
         }
     ],
     "H2_6-311+g_singlet": [
@@ -4602,7 +4656,13 @@
                 "energy": 7.2108452037881925,
                 "cpu_time": 7.439941822000037
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1534824786319318,
+                "tapered-diagonalized_energy": -1.153482478631917,
+                "energy": -1.1279706567934233,
+                "cpu_time": 15.175229009999995
+            }
         }
     ],
     "H2_6-311++g_singlet": [
@@ -4728,7 +4788,13 @@
                 "energy": 7.181759280751042,
                 "cpu_time": 1303.8741662499997
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1535353843114722,
+                "tapered-diagonalized_energy": -1.1535353843114082,
+                "energy": -1.1279710032099957,
+                "cpu_time": 1609.524894672
+            }
         }
     ],
     "H2_6-311g*_singlet": [
@@ -4844,7 +4910,13 @@
                 "energy": 4.91924623445111,
                 "cpu_time": 12.38265502899958
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1534824786319189,
+                "tapered-diagonalized_energy": -1.1534824786319098,
+                "energy": -1.1279706567934118,
+                "cpu_time": 13.464644270000008
+            }
         }
     ],
     "H2_6-311+g*_singlet": [
@@ -4960,7 +5032,13 @@
                 "energy": 7.502923614283588,
                 "cpu_time": 11.737546338999891
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1534824786319289,
+                "tapered-diagonalized_energy": -1.1534824786319178,
+                "energy": -1.1279706567934207,
+                "cpu_time": 12.170470961999854
+            }
         }
     ],
     "H2_6-311++g*_singlet": [
@@ -5086,7 +5164,13 @@
                 "energy": 8.51379481147533,
                 "cpu_time": 1603.9723125130004
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.153535384311454,
+                "tapered-diagonalized_energy": -1.1535353843114082,
+                "energy": -1.1279710032099979,
+                "cpu_time": 1239.7905016420002
+            }
         }
     ],
     "H2_6-311g**_singlet": [
@@ -5550,7 +5634,13 @@
                 "energy": -1.1245745498925537,
                 "cpu_time": 1.8918509210016055
             },
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_diag": {
+                "full-diagonalized_energy": -1.1480262282671974,
+                "tapered-diagonalized_energy": -1.1480262282671836,
+                "energy": -1.124574549893054,
+                "cpu_time": 2.0058777849999387
+            }
         }
     ],
     "H2_def2-SVP_singlet": [
