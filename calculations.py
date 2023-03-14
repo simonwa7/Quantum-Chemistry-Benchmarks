@@ -1,7 +1,7 @@
 from time import process_time
 from openfermionpsi4 import run_psi4
 from functools import partial
-from symmer.symplectic import PauliwordOp, QuantumState
+from symmer.operators import PauliwordOp, QuantumState
 from symmer.utils import exact_gs_energy
 from symmer.projection import QubitTapering, ContextualSubspace
 import numpy as np
@@ -136,14 +136,13 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
             hamiltonian.to_sparse_matrix
         )
         nc_data["full-diagonalized_energy"] = ground_state_energy
-        ground_state = QuantumState([ground_state.sort().state_matrix[0]])
         nc_data["hf-fci_overlap"] = hartree_fock_state.dagger * ground_state
 
-    tapered_hamiltonian = QubitTapering(hamiltonian).taper_it(
-        ref_state=hartree_fock_state
-    )
-    tapered_gs_energy, _ = exact_gs_energy(tapered_hamiltonian.to_sparse_matrix)
-    nc_data["tapered-diagonalized_energy"] = tapered_gs_energy
+        tapered_hamiltonian = QubitTapering(hamiltonian).taper_it(
+            ref_state=hartree_fock_state
+        )
+        tapered_gs_energy, _ = exact_gs_energy(tapered_hamiltonian.to_sparse_matrix)
+        nc_data["tapered-diagonalized_energy"] = tapered_gs_energy
 
     try:
         cs_vqe = ContextualSubspace(
