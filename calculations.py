@@ -131,6 +131,10 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
     )
     hartree_fock_state = QuantumState([np.array(hartree_fock_state, dtype=int)])
 
+    tapered_hamiltonian = QubitTapering(hamiltonian).taper_it(
+        ref_state=hartree_fock_state
+    )
+
     if number_of_qubits < 20:
         ground_state_energy, ground_state = exact_gs_energy(
             hamiltonian.to_sparse_matrix
@@ -138,9 +142,6 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
         nc_data["full-diagonalized_energy"] = ground_state_energy
         nc_data["hf-fci_overlap"] = hartree_fock_state.dagger * ground_state
 
-        tapered_hamiltonian = QubitTapering(hamiltonian).taper_it(
-            ref_state=hartree_fock_state
-        )
         tapered_gs_energy, _ = exact_gs_energy(tapered_hamiltonian.to_sparse_matrix)
         nc_data["tapered-diagonalized_energy"] = tapered_gs_energy
 
