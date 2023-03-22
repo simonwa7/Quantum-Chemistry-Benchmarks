@@ -5286,7 +5286,31 @@
                 "cpu_time": 0.017339008999999628
             },
             "number_of_qubits": 24,
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_SingleSweep_magnitude": {
+                "energy": -1.132466037798002,
+                "cpu_time": 47.053074823
+            },
+            "nc_DFS_magnitude": {
+                "energy": -1.1324660377980211,
+                "cpu_time": 93.721909596
+            },
+            "nc_DFS_largest": {
+                "energy": -1.132466037798071,
+                "cpu_time": 94.23694359800001
+            },
+            "nc_SingleSweep_CurrentOrder": {
+                "energy": -1.1325095443454178,
+                "cpu_time": 47.84391526000002
+            },
+            "nc_SingleSweep_random": {
+                "energy": 32.98036691997157,
+                "cpu_time": 29.155743117999975
+            },
+            "nc_diag": {
+                "energy": -1.1324660377980604,
+                "cpu_time": 30.344369001000018
+            }
         }
     ],
     "H2_6-311+g**_singlet": [
@@ -5402,7 +5426,31 @@
                 "cpu_time": 0.018306920999999754
             },
             "number_of_qubits": 24,
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_SingleSweep_magnitude": {
+                "energy": -1.1324660377980855,
+                "cpu_time": 46.59583772100001
+            },
+            "nc_DFS_magnitude": {
+                "energy": -1.132466037798072,
+                "cpu_time": 93.970959445
+            },
+            "nc_DFS_largest": {
+                "energy": -1.1324660377977818,
+                "cpu_time": 94.04071511899997
+            },
+            "nc_SingleSweep_CurrentOrder": {
+                "energy": -1.1325095443454312,
+                "cpu_time": 47.972266017999914
+            },
+            "nc_SingleSweep_random": {
+                "energy": 29.917242984093107,
+                "cpu_time": 32.838118199000064
+            },
+            "nc_diag": {
+                "energy": -1.1324660377980873,
+                "cpu_time": 32.94922494000002
+            }
         }
     ],
     "H2_6-311++g**_singlet": [
@@ -5528,7 +5576,31 @@
                 "cpu_time": 0.0175549359999998
             },
             "number_of_qubits": 28,
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_SingleSweep_magnitude": {
+                "energy": -1.132481838432362,
+                "cpu_time": 309.76109514300003
+            },
+            "nc_DFS_magnitude": {
+                "energy": -1.1324818384326996,
+                "cpu_time": 513.14653259
+            },
+            "nc_DFS_largest": {
+                "energy": -1.1324818384326998,
+                "cpu_time": 497.0284643729999
+            },
+            "nc_SingleSweep_CurrentOrder": {
+                "energy": -1.1324882328613162,
+                "cpu_time": 311.68651668400025
+            },
+            "nc_SingleSweep_random": {
+                "energy": 40.22221585124836,
+                "cpu_time": 237.6806085190001
+            },
+            "nc_diag": {
+                "energy": -1.13248183843271,
+                "cpu_time": 302.6643190320001
+            }
         }
     ],
     "H2_def2-SV(P)_singlet": [
@@ -5746,7 +5818,31 @@
                 "cpu_time": 0.01617546199999964
             },
             "number_of_qubits": 20,
-            "largest_atomic_number": 1
+            "largest_atomic_number": 1,
+            "nc_SingleSweep_magnitude": {
+                "energy": -1.128906378491152,
+                "cpu_time": 14.004674199999954
+            },
+            "nc_DFS_magnitude": {
+                "energy": -1.1289063784898152,
+                "cpu_time": 22.9940778350001
+            },
+            "nc_DFS_largest": {
+                "energy": -1.1289063784898152,
+                "cpu_time": 22.51661403700018
+            },
+            "nc_SingleSweep_CurrentOrder": {
+                "energy": -1.128943753094746,
+                "cpu_time": 13.834911223999825
+            },
+            "nc_SingleSweep_random": {
+                "energy": 20.546345254444432,
+                "cpu_time": 9.01517953199982
+            },
+            "nc_diag": {
+                "energy": -1.128906378491409,
+                "cpu_time": 7.118007056000351
+            }
         }
     ],
     "H2_def2-SVPD_singlet": [
