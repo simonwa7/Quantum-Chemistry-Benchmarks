@@ -6,7 +6,7 @@ import numpy as np
 import json
 import operator
 
-with open("data/psi4_statistics.json", "r") as f:
+with open("data/basis_sets_data.json", "r") as f:
     psi4_data = json.loads(f.read())
 
 plt.rc("font", size=10)  # controls default text size

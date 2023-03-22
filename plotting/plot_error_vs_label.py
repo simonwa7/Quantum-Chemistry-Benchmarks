@@ -3,7 +3,7 @@ import json
 
 import matplotlib.pyplot as plt
 
-data_filename = "/Users/williamsimon/Desktop/Research/QuantumChemistryBenchmarks/data/basis_sets_data.json"
+data_filename = "/Users/williamsimon/Desktop/Research/QuantumChemistryBenchmarks/data/geometries_data.json"
 label = "number_of_qubits"
 
 with open(data_filename, "r") as f:
@@ -32,7 +32,7 @@ length = 8 / 2.54  # convert inches to cm
 width = 8 / 2.54  # convert inches to cm
 fig = plt.figure(figsize=(width, length), tight_layout=True)
 ax = plt.subplot(111)
-ax.set_title("Method Errors vs {}".format(label))
+ax.set_title("Different Geometries")
 ax.scatter(labels, errors, c=colors, s=10)
 ax.set_xlabel(label)
 ax.set_yscale("log")
@@ -40,7 +40,7 @@ ax.set_ylabel("Error (Ha)")
 
 
 plt.savefig(
-    "/Users/williamsimon/Desktop/Research/QuantumChemistryBenchmarks/figures/error_vs_{}.pdf".format(
+    "/Users/williamsimon/Desktop/Research/QuantumChemistryBenchmarks/figures/geometries_error_vs_{}.pdf".format(
         label
     ),
     dpi=300,

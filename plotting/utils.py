@@ -99,7 +99,7 @@ def plot_method_errors_against_eachother(data_filename, methodx, methody, legend
         length = 10 / 2.54
     fig = plt.figure(figsize=(width, length), tight_layout=True)
     ax = plt.subplot(111)
-    ax.set_title("{}: Error of {} vs {}".format(type, methodx, methody))
+    # ax.set_title("{}: Error of {} vs {}".format(type, methodx, methody))
     ax.scatter(methodx_errors, methody_errors, c=colors, s=10)
     ax.set_xlabel("$\Delta_{}$ (Ha)".format("{" + methodx.replace("_", "\_") + "}"))
     ax.set_ylabel("$\Delta_{}$ (Ha)".format("{" + methody.replace("_", "\_") + "}"))

@@ -20,5 +20,5 @@ from itertools import combinations
 
 for method1, method2 in combinations(methods, 2):
     plot_method_errors_against_eachother(
-        data_dir + "basis_sets" + "_data.json", method1, method2
+        data_dir + "geometries" + "_data.json", method1, method2
     )
