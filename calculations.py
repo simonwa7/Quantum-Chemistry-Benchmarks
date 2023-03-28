@@ -140,7 +140,7 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
             hamiltonian.to_sparse_matrix
         )
         nc_data["full-diagonalized_energy"] = ground_state_energy
-        nc_data["hf-fci_overlap"] = float(hartree_fock_state.dagger * ground_state)
+        nc_data["hf-fci_overlap"] = abs(hartree_fock_state.dagger * ground_state)
 
         tapered_gs_energy, _ = exact_gs_energy(tapered_hamiltonian.to_sparse_matrix)
         nc_data["tapered-diagonalized_energy"] = tapered_gs_energy
