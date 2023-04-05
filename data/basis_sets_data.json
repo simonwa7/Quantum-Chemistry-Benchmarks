@@ -68,7 +68,8 @@
                 "tapered-diagonalized_energy": -0.9331636991145503,
                 "energy": -0.5725759458475425,
                 "cpu_time": 0.3279638600000001
-            }
+            },
+            "hf_fci_overlap": 0.8437467835029061
         }
     ],
     "H1-He1_sto-3g_singlet_1+": [
@@ -1960,7 +1961,8 @@
                 "tapered-diagonalized_energy": -0.9923972187618934,
                 "energy": -0.7127043128039307,
                 "cpu_time": 0.5832252630000001
-            }
+            },
+            "hf_fci_overlap": 0.9927383699926056
         }
     ],
     "H2_6-31g_singlet": [
@@ -2072,7 +2074,8 @@
                 "tapered-diagonalized_energy": -0.9964658214584499,
                 "energy": -0.7241624742359302,
                 "cpu_time": 0.5571216410000002
-            }
+            },
+            "hf_fci_overlap": 2.7468649990437076e-07
         }
     ],
     "H1-He1_3-21g_singlet_1+": [
@@ -3950,7 +3953,8 @@
                 "tapered-diagonalized_energy": -1.1516827321121392,
                 "energy": -1.126733967110959,
                 "cpu_time": 1.7356254449999993
-            }
+            },
+            "hf_fci_overlap": 0.9927422190805533
         }
     ],
     "H2_6-31++g_singlet": [
@@ -4072,7 +4076,8 @@
                 "tapered-diagonalized_energy": -1.1518983622770078,
                 "energy": -1.1268350454011498,
                 "cpu_time": 25.976056297000003
-            }
+            },
+            "hf_fci_overlap": 0.9926784407783904
         }
     ],
     "H2_6-31g*_singlet": [
@@ -4184,7 +4189,8 @@
                 "tapered-diagonalized_energy": -1.1516827321121392,
                 "energy": -1.126733967110959,
                 "cpu_time": 1.7815974510000032
-            }
+            },
+            "hf_fci_overlap": 0.9927422190805534
         }
     ],
     "H2_6-31+g*_singlet": [
@@ -4296,7 +4302,8 @@
                 "tapered-diagonalized_energy": -1.1516827321121392,
                 "energy": -1.126733967110959,
                 "cpu_time": 1.6208158379999986
-            }
+            },
+            "hf_fci_overlap": 0.992742219080553
         }
     ],
     "H2_6-31++g*_singlet": [
@@ -4418,7 +4425,8 @@
                 "tapered-diagonalized_energy": -1.1518983622770074,
                 "energy": -1.1268350454011518,
                 "cpu_time": 17.680728836
-            }
+            },
+            "hf_fci_overlap": 0.9926784407783882
         }
     ],
     "H2_6-311g_singlet": [
@@ -4540,7 +4548,8 @@
                 "tapered-diagonalized_energy": -1.153482478631908,
                 "energy": -1.1279706567934136,
                 "cpu_time": 13.267230616999996
-            }
+            },
+            "hf_fci_overlap": 0.9923990781153911
         }
     ],
     "H2_6-311+g_singlet": [
@@ -4662,7 +4671,8 @@
                 "tapered-diagonalized_energy": -1.153482478631917,
                 "energy": -1.1279706567934233,
                 "cpu_time": 15.175229009999995
-            }
+            },
+            "hf_fci_overlap": 0.9923990781153904
         }
     ],
     "H2_6-311++g_singlet": [
@@ -4794,7 +4804,8 @@
                 "tapered-diagonalized_energy": -1.1535353843114082,
                 "energy": -1.1279710032099957,
                 "cpu_time": 1609.524894672
-            }
+            },
+            "hf_fci_overlap": 0.9923942164481936
         }
     ],
     "H2_6-311g*_singlet": [
@@ -4916,7 +4927,8 @@
                 "tapered-diagonalized_energy": -1.1534824786319098,
                 "energy": -1.1279706567934118,
                 "cpu_time": 13.464644270000008
-            }
+            },
+            "hf_fci_overlap": 0.9923990781153905
         }
     ],
     "H2_6-311+g*_singlet": [
@@ -5038,7 +5050,8 @@
                 "tapered-diagonalized_energy": -1.1534824786319178,
                 "energy": -1.1279706567934207,
                 "cpu_time": 12.170470961999854
-            }
+            },
+            "hf_fci_overlap": 0.99239907811539
         }
     ],
     "H2_6-311++g*_singlet": [
@@ -5170,7 +5183,8 @@
                 "tapered-diagonalized_energy": -1.1535353843114082,
                 "energy": -1.1279710032099979,
                 "cpu_time": 1239.7905016420002
-            }
+            },
+            "hf_fci_overlap": 0.9923942164481965
         }
     ],
     "H2_6-311g**_singlet": [

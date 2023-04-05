@@ -28,13 +28,6 @@ for molecule in MOLECULES:
         "multiplicity": molecule.multiplicity,
     }
 
-    print(
-        "-------Working on {} (configuration below)-------\n{}".format(
-            molecule.name, molecule_configuration
-        ),
-        flush=True,
-    )
-
     (
         preivous_configuration_calculations,
         configuration_index,
@@ -44,14 +37,40 @@ for molecule in MOLECULES:
 
     molecule_configuration = copy.deepcopy(preivous_configuration_calculations)
     methods_to_run = get_calculation_methods_to_run(preivous_configuration_calculations)
+
+    if len(methods_to_run) > 0:
+        print(
+            "-------Working on {} (configuration below)-------\n{}".format(
+                molecule.name,
+                {
+                    "geometry": molecule.geometry,
+                    "charge": molecule.charge,
+                    "multiplicity": molecule.multiplicity,
+                },
+            ),
+            "\n++++ Running the following calculations: ",
+            methods_to_run,
+            flush=True,
+        )
+
     configuration_updated = False
     for method_name in methods_to_run:
-        print(method_name, flush=True)
         try:
             molecule_configuration[method_name] = METHOD_MAP[method_name](molecule)
-            print(
-                method_name, molecule_configuration[method_name]["energy"], flush=True
-            )
+
+            if "overlap" not in method_name:
+                print(
+                    method_name,
+                    molecule_configuration[method_name]["energy"],
+                    flush=True,
+                )
+            else:
+
+                print(
+                    method_name,
+                    molecule_configuration[method_name],
+                    flush=True,
+                )
             configuration_updated = True
         except Exception as e:
             error_running_calculation(method_name, e)

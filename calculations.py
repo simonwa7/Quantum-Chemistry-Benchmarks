@@ -140,8 +140,6 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
             hamiltonian.to_sparse_matrix
         )
         nc_data["full-diagonalized_energy"] = ground_state_energy
-        nc_data["hf-fci_overlap"] = abs(hartree_fock_state.dagger * ground_state)
-
         tapered_gs_energy, _ = exact_gs_energy(tapered_hamiltonian.to_sparse_matrix)
         nc_data["tapered-diagonalized_energy"] = tapered_gs_energy
 
@@ -156,6 +154,27 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
         raise AttributeError(e.__str__())
 
 
+def compute_hf_fci_overlap(molecule):
+
+    qubit_hamiltonian = _get_qubit_hamiltonian_from_molecule(molecule)
+    number_of_qubits = count_qubits(qubit_hamiltonian)
+    if number_of_qubits > 20:
+        return "Not Computed. Molecule is Too Large"
+    hamiltonian = PauliwordOp.from_openfermion(qubit_hamiltonian)
+
+    hartree_fock_state = np.hstack(
+        (
+            np.ones(molecule.n_electrons),
+            np.zeros(molecule.n_qubits - molecule.n_electrons),
+        )
+    )
+    hartree_fock_state = QuantumState([np.array(hartree_fock_state, dtype=int)])
+
+    _, ground_state = exact_gs_energy(hamiltonian.to_sparse_matrix)
+
+    return abs(hartree_fock_state.dagger * ground_state)
+
+
 METHOD_MAP = {
     "scf": run_hf,
     "mp2": run_mp2,
@@ -168,5 +187,6 @@ METHOD_MAP = {
     "nc_SingleSweep_CurrentOrder": partial(run_nc, strategy="SingleSweep_CurrentOrder"),
     "nc_SingleSweep_random": partial(run_nc, strategy="SingleSweep_random"),
     "nc_diag": partial(run_nc, strategy="diag"),
+    "hf_fci_overlap": compute_hf_fci_overlap,
     # "nc_basis": partial(run_nc, strategy="basis"),
 }
