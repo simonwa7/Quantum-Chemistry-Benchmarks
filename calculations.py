@@ -115,7 +115,7 @@ def _get_qubit_hamiltonian_from_molecule(molecule):
 
 
 def run_nc(molecule, strategy="SingleSweep_magnitude"):
-    """TODO: Not Yet Ready"""
+    """Not Yet Fully Stable"""
     start = process_time()
     nc_data = {}
 
