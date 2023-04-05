@@ -30,6 +30,7 @@ def error_running_calculation(method_name, error_message):
     print(
         "Error calculating {} for current configuration:\n".format(method_name),
         error_message,
+        flush=True,
     )
 
 

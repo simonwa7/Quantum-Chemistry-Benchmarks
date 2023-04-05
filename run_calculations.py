@@ -46,10 +46,13 @@ for molecule in MOLECULES:
     methods_to_run = get_calculation_methods_to_run(preivous_configuration_calculations)
     configuration_updated = False
     for method_name in methods_to_run:
+        print(method_name, flush=True)
         try:
             configuration_updated = True
             molecule_configuration[method_name] = METHOD_MAP[method_name](molecule)
-            print(method_name, molecule_configuration[method_name]["energy"])
+            print(
+                method_name, molecule_configuration[method_name]["energy"], flush=True
+            )
         except Exception as e:
             error_running_calculation(method_name, e)
             continue
