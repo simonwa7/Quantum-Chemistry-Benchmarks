@@ -61,6 +61,7 @@ for molecule in MOLECULES:
                 print(
                     method_name,
                     molecule_configuration[method_name]["energy"],
+                    molecule_configuration[method_name]["cpu_time"],
                     flush=True,
                 )
             else:
@@ -68,6 +69,7 @@ for molecule in MOLECULES:
                 print(
                     method_name,
                     molecule_configuration[method_name],
+                    molecule_configuration[method_name]["cpu_time"],
                     flush=True,
                 )
 
