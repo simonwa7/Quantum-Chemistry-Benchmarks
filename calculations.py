@@ -121,6 +121,10 @@ def run_nc(molecule, strategy="SingleSweep_magnitude"):
 
     qubit_hamiltonian = _get_qubit_hamiltonian_from_molecule(molecule)
     number_of_qubits = count_qubits(qubit_hamiltonian)
+
+    if number_of_qubits > 28:
+        return "Not Computed. Molecule is Too Large"
+
     hamiltonian = PauliwordOp.from_openfermion(qubit_hamiltonian)
 
     hartree_fock_state = np.hstack(
