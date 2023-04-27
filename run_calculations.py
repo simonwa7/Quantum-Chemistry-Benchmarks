@@ -53,7 +53,6 @@ for molecule in MOLECULES:
             flush=True,
         )
 
-    configuration_updated = False
     for method_name in methods_to_run:
         try:
             molecule_configuration[method_name] = METHOD_MAP[method_name](molecule)
@@ -71,7 +70,19 @@ for molecule in MOLECULES:
                     molecule_configuration[method_name],
                     flush=True,
                 )
-            configuration_updated = True
+
+            if configuration_index is not None:
+                DATA_DICTIONARY[molecule.name][
+                    configuration_index
+                ] = molecule_configuration
+            else:
+                configurations_calculated = DATA_DICTIONARY.get(molecule.name, [])
+                configurations_calculated.append(molecule_configuration)
+                DATA_DICTIONARY[molecule.name] = configurations_calculated
+
+            with open(data_filename, "w") as f:
+                f.write(json.dumps(DATA_DICTIONARY))
+            f.close()
         except Exception as e:
             error_running_calculation(method_name, e)
             continue
@@ -84,15 +95,3 @@ for molecule in MOLECULES:
                 configuration_updated = True
         except:
             pass
-
-    if configuration_updated:
-        if configuration_index is not None:
-            DATA_DICTIONARY[molecule.name][configuration_index] = molecule_configuration
-        else:
-            configurations_calculated = DATA_DICTIONARY.get(molecule.name, [])
-            configurations_calculated.append(molecule_configuration)
-            DATA_DICTIONARY[molecule.name] = configurations_calculated
-
-        with open(data_filename, "w") as f:
-            f.write(json.dumps(DATA_DICTIONARY))
-        f.close()
