@@ -162,7 +162,7 @@ def compute_hf_fci_overlap(molecule):
     qubit_hamiltonian = _get_qubit_hamiltonian_from_molecule(molecule)
     number_of_qubits = count_qubits(qubit_hamiltonian)
     if number_of_qubits > 18:
-        return {"energy": "Not Computed. Molecule is Too Large", "cpu_time": 0}
+        return "Not Computed. Molecule is Too Large"
     hamiltonian = PauliwordOp.from_openfermion(qubit_hamiltonian)
 
     hartree_fock_state = np.hstack(
@@ -174,8 +174,8 @@ def compute_hf_fci_overlap(molecule):
     hartree_fock_state = QuantumState([np.array(hartree_fock_state, dtype=int)])
 
     _, ground_state = exact_gs_energy(hamiltonian.to_sparse_matrix)
-
-    return abs(hartree_fock_state.dagger * ground_state)
+    overlap = abs(hartree_fock_state.dagger * ground_state)
+    return overlap
 
 
 METHOD_MAP = {
