@@ -3,8 +3,8 @@ import json
 
 import matplotlib.pyplot as plt
 
-data_filename = "/Users/williamsimon/Desktop/Research/QuantumChemistryBenchmarks/data/geometries_data.json"
-label = "number_of_qubits"
+data_filename = "/Users/williamsimon/Desktop/Research/QuantumChemistryBenchmarks/data/basis_sets_data.json"
+label = "largest_atomic_number"
 
 with open(data_filename, "r") as f:
     data = json.loads(f.read())
@@ -28,19 +28,22 @@ plt.rc("xtick", labelsize=10)  # fontsize of the x tick labels
 plt.rc("ytick", labelsize=10)  # fontsize of the y tick labels
 plt.rc("legend", fontsize=10)  # fontsize of the legend
 
-length = 8 / 2.54  # convert inches to cm
+length = 6 / 2.54  # convert inches to cm
 width = 8 / 2.54  # convert inches to cm
 fig = plt.figure(figsize=(width, length), tight_layout=True)
 ax = plt.subplot(111)
-ax.set_title("Different Geometries")
+# ax.set_title("Different Geometries")
 ax.scatter(labels, errors, c=colors, s=10)
 ax.set_xlabel(label)
 ax.set_yscale("log")
-ax.set_ylabel("Error (Ha)")
+ax.set_ylabel("Energy Error (Ha)")
+ax.set_xlabel(label.replace("number_of_qubits", "Number of Qubits").replace("largest_atomic_number", "Largest Atomic Number"))
+
+plt.ylim(1e-10, 1e1)
 
 
 plt.savefig(
-    "/Users/williamsimon/Desktop/Research/QuantumChemistryBenchmarks/figures/geometries_error_vs_{}.pdf".format(
+    "/Users/williamsimon/Desktop/Research/QuantumChemistryBenchmarks/figures/basis_sets_error_vs_{}.pdf".format(
         label
     ),
     dpi=300,

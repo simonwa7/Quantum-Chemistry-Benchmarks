@@ -62,8 +62,15 @@ plt.rc("ytick", labelsize=10)  # fontsize of the y tick labels
 plt.rc("legend", fontsize=10)  # fontsize of the legend
 
 data = data[data["Molecule"] == MOLECULE]
-sns.scatterplot(data=data, x="Number of Qubits", y="Error", hue="Method")
+
+length = 6 / 2.54  # convert inches to cm
+width = 8 / 2.54  # convert inches to cm
+fig = plt.figure(figsize=(width, length), tight_layout=True)
+sns.scatterplot(data=data, x="Number of Qubits", y="Error", hue="Method", legend=False)
 plt.yscale("log")
+plt.ylabel("Energy Error (Ha)")
+plt.ylim(1e-10, 1e1)
+# plt.axhspan(1e-15, 0.00159, color="y", alpha=0.5, lw=0, label="Chemical Accuracy")
 plt.title(MOLECULE)
-plt.legend(loc="lower left")
+# plt.legend(loc="lower left")
 plt.savefig("figures/" + MOLECULE + ".pdf", dpi=300)
